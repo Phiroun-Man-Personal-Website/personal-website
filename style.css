@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.75)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbIAAAB0CAMAAADXa0czAAABzlBMVEX/MzP/mZn/Zmb/zMz/////zs78/Pz/m5v/1dX/ZGT/qqr/f3//VFT/MDD/Kyv/eHj/lZX/2tr/trb/rq7/iYn/amr/np7/0c//0Mb/oKGeeniSeHj909j/1tX4uKh/c4agW1T/xapjYITxr5j/mZHxhHPuWVD5ZmmKQ0/qVEXZYmf/amLhLS3qMDHyLCddFR73MzT/4OCAfph8UE/VucbmwMjGj3+ei5fwt6yqlaTloIduc470wL3kur+IgJTxxcqWlLBtX3NyX2q8c1nAt8jNiGeqpcBmZHtsTVm/fWyzqbyqb1+aXkDNrbbOkH1fWGjLo6Oqgn2MfIeUcHbayM6IWF3awdKcaFxxQ0RqVVSObWTXjm9gT2aNWUrkvq19YmHkraLOoqvIlZCxkJHhpJSxfXyeamqCTTKQhYWPZXaSR0LRiZPWeG7Fcnjgj5j6jX6sTT3WbVWfdYk3MUebTUWaRjBcPUaaWmGweoiAMgbTj55zMTKeQz7bi4RePlpfLjSyYVx8Mix6U2qjSVKqOzV9Pk7EVFqEKSKgNjTPRz+xOTCGJxlOJjKVS1jUYmd5ISG2KCvBIh+HFhehJCiqGhTQMDSyGxV2ExRRGSIdDxWLF+/BAAAH5UlEQVR4nO2Zi1sbVRbAp2FnZ6gGgzozGQIYJC/yREpaSinUbqu0lfpalNW6uq6yEtpQam3YJluwKSHpK5AH7P63e+6dTAJk0P2+7RgPPT++JHfOvZePm993zpwE4Y8EMoQ/EMggZeggZehgyt6RCRy8Yyrr7SJwIJMybJAydJAydJAydJAydJAydJAydJAydBypTBSboy5RE40neGjmtHh4IUw2Z8Quwi7albG3HB7DYxp/7XKfGh/81JPUTnv6xgc9fWcMLxN9Zw15EE8a+wY9Z5ms056z8uQ5kazZRZsycWrqvDZ1fmZ4empGhFdt8oI2kRx6Vz7VL8O4l4sS3Rf7/3SJSREvvzf0Po+5Z+UrEBLPD1y5OnBtXJwiZ/bQpkz+4Mzc9TOnx4Y//Oii9vFHF2c+T0KyDb8vX/N80j988dM5LmrwLRlUwkjz/lmbZ3vFobeNkKhduyROXpA/+KxzpzrWtCnTPk8OLPQOTg9P916+dP2HvyS/mIEy+PW4KMtfXpBl940ZsalMNJWJTWVil/zlNCie1mTKMnuwUiZ/lRweGx4bOPXXt3u/SF5LioNfj8vu8/Ll9yb6h97t/ybJC+Plq+6/iawwuj8cgBAvjFen5uQr07IIWaZ9k+zowY4v7feyb2fEwb6Ppyf6+ua0bz1/n5m8MPAddB3u76Gt+M7zyczAQr/RfsjD51gdPN33mXs+2Wg/Js66Fz19c3Avk/9BhdEeLDrGLvH6D/PjYqNzFN0L47y3FxuN/tAYu4exfv8KlwLxwTM8xFvMLg0WT57Tht7SOnWmY47l5zKx8RHLQDt4UxKbKsT20L4AGbMJ+vYDHaQMHaQMHaQMHaQMHaQMHaQMHS1lIoGDXlPZ1EkCB6+byl53nSAw4HqDlGGDlKGDlKGDlKGDlKGDlKGDlKGDlKHjSGWSZI5USWIXUgNzWjq8sDW3bzPxwjlKmeRfarztamrZ513UpZuZzLJvw7vIw5LPu2zM6zczurHDl1kzQrfU1SVyZhvtyiBD4P1WQZnE88W/pK6kV2b1lM7HxiLfgn77Pl+9emflBg9KWf0206je/lFX76Yp0eyiTZn60/zazXnvQ/8976yU2pjVc2nwBsogrvrvZdJMhbTyUPffYSM1tyyFdB56wEPq6lpIl/x31H/e7+CxjjPtyu6m9ay+suRf0lfv+xcX0l9BqvlSy5Kqr95R1ZUHqsSVGWkIytJS6CQP3eAh/w3fQpqVVb2zBzu+WClTU4ay3L8enLybhhrnS91XT0igzKX6ZlWXDg5n4coHGSetrrEQlEbfPX11zZX23bq1vswqqEvt7MmOLW3KpI20tJLxLsFjzbeRyaQht/yz3kWfN7Oo+ufn0+rPaVh1MzOv+vlNzOtd9qVYCCaZKulERldvL6s/UWG0B4v2A3x8vwGFkLUfgG89zcf8Gp6gJp4wWv5VowFRpRXeIEpSo7uH6jgr+R5SltnDEU3+vn5Pch3q/SSL0WGkX5ok/i+slVGH/juGvrBCBylDBylDBylDBylDBylDR0tZ8x9ixO+aljL9FQIHkqnM1U3g4M2WMgeBAVKGDlKGDlKGDlKGDlKGDlKGDlKGjv9FmfJb/kHEr3G0skDeHD163l0oBB2BQiEMg0JjYyFsDJQSzO0PKYFCcOSZ/X/6y4qFMpZUiqIEQoriYD8jmyChFFK2wsHgyGbQ8NP9c7hoOBt5Ftg0Nm7xkFLKBxUYU3LaRLsy5XEqH8jmQoH13KZjq5hVHj+HaCSrPEkVlJGnOUMZCDUyiU2XeSzylIciiVwBPD9TnjzvzJGOOxbKimGlHAyEQErpeSCXDXNJj/LMDjwF1nn2MGWhxvKGslfXubLAj0rJnCRs4GhlIyHlcXhdeRQuBh3dj/MgihlRItlgt8KzzsyygiPL6qcjAsryjiB72eSTVBltwULZo7AjkC2GWHGMFCHLSnlWD/ORXC4VLGWhOj5hN7FSLhsceQpWunPFvGOLFcFSKhQMgK1sKggiqTDahHX7UQJP0II4ePsRWQ8qiqOVNJFNpbGuxLtHmIyEmlsNAussD3+rQ7xcWDf53eHwvjWB4MEtzcug0hZqbWmLES8G+vYDHaQMHaQMHaQMHaQMHaQMHaQMHaQMHS1lb75K4OAVU9lrPU4CAz2OljKBwECPQsqQQcrQQcrQQcrQQcrQQcrQQcrQQcrQcbSy+LY52qkL0aggjEajMSHGRhy4MBg1I2YIXqLNzcSL5heUlVuDeHWnIlS2d6LxBPjjVLcrhqp4ZWfLCNWMUKVerQuVmEDYg4Wy3Wo1XoFHebvCxAi7TJKzDMrqQjxRHzX2gcciH9Xqwh6POROgFl73opBj0SqbIGzAQlmN5UjPFiTXbj2+U45WmJDdqjAaq21DYTSSj6WekVy1aCOlehKGxVqlXGej0dEOnOclwEJZNSrsCc4KGNmtl0dr0Sq89TssfXitdJa5iVaW7R7Ksp5/c5/FTpzmpcBaWbRcLccTtYSzUk1Ed6DM/We7KlSqe7HoXmXbqHg71XIM8gpM7VVhjoe2yqPxBGQZXMGmGrUgtmDdfsRi0WprSeLgFqfZl7T6Qufe4V8La8oCYQfWyuLb+zMkFj2wxdm8jDXvVgdX8C3OwzHixUAfpdFBytBBytBBytBBytBBytBBytCxXxmBg25Tmf4agQOXqYxABSlDBylDx38B2b1oq5nXvpQAAAAASUVORK5CYII=);
+    background-size: cover;     
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
