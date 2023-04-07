@@ -175,6 +175,62 @@ img{
     color:coral;
 }
 
+/*-------contact--------*/
+
+#contact{
+    padding: 60px 90px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left h3{
+    font-size: 35px;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: coral;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    color: coral;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: crimson;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: coral;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: coral;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
 /*----- footer -----*/
 .footer{
     position: absolute;
