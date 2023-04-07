@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(17, 46, 165, 0.7),rgba(190, 191, 196, 0.7)),url(images/portland.jpg);
+    background-color:black;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -22,8 +22,9 @@ nav{
 }
 
 nav h1{
-    width: 150px;
+    width: 200px;
     color: #fff;
+    font-size: 30px;
 }
 
 .nav-links{
@@ -41,7 +42,7 @@ nav h1{
 .nav-links ul li a{
     text-decoration: none;
     color: white;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .nav-links ul li::after{
@@ -61,21 +62,51 @@ nav h1{
 .text-box{
     width: 90%;
     color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    margin-left: 20%;
+    margin-top: 20%;
     transform: translate(-50%,-50%);
     text-align: center;
 }
 
+span{
+    color: coral;
+}
+
 .text-box h1{
-    font-size: 62px;
+    font-size: 30px;
 }
 
 .text-box p{
     margin: 10px 0 40px;
     font-size: 14px;
     color: #fff;
+}
+
+.text-box a{
+    background: #fff;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(43, 146, 214);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.image{
+    width: 25%;
+    height:75%;
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+}
+.image img{
+    border-radius: 10px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 nav .fa{
@@ -112,6 +143,38 @@ nav .fa{
     }
 }
 
+/*-----about-------*/
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#about{
+    padding: 60px 90px;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 25%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about-col-2{
+    flex-basis: 65%;
+}
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color:coral;
+}
+
 /*----- footer -----*/
 .footer{
     position: absolute;
@@ -143,14 +206,14 @@ nav .fa{
     z-index: 1;
 }
 .selfimage{
-    width: 20%;
+    width: 10%;
     height: 10%;
     z-index: 5;
     display: block;
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-400%);
+    transform: translate(-50%,-200%);
 }
 img{
     max-width: 100%;
