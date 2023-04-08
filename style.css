@@ -4,14 +4,22 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.header{
+#header{
     min-height: 100vh;
     width: 100%;
-    background-color:black;
+    background-color:rgb(141, 133, 133);
     background-position: center;
     background-size: cover;
     position: relative;
     
+}
+
+.container{
+    padding: 10px 10px;
+}
+
+.logo{
+    width: 100px;
 }
 
 nav{
@@ -27,25 +35,25 @@ nav h1{
     font-size: 30px;
 }
 
-.nav-links{
+nav{
     flex: 1;
     text-align: right;
 }
 
-.nav-links ul li{
+nav ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
 
-.nav-links ul li a{
+nav ul li a{
     text-decoration: none;
     color: white;
     font-size: 20px;
 }
 
-.nav-links ul li::after{
+nav ul li::after{
     content: '';
     height: 2px;
     width: 0px;
@@ -55,7 +63,7 @@ nav h1{
     transition: 0.5s;
 }
 
-.nav-links ul li:hover::after{
+nav ul li:hover::after{
     width: 100%;
 }
 
@@ -111,16 +119,18 @@ img{
 
 nav .fa{
     display: none;
+    color: #fff;
 }
 
-@media(max-width: 700px){
+/*----------------css for small screen--------*/  
+@media only screen and (max-width: 600px){
     .text-box h1{
         font-size: 20px;
     }
-    .nav-links ul li{
+    nav ul li{
         display: block;
     }
-    .nav-links{
+    nav{
         position: absolute;
         background: #f44336;
         height: 100vh;
@@ -138,10 +148,20 @@ nav .fa{
         font-size: 20px;
         cursor: pointer;
     }
-    .nav-links ul{
+    nav ul{
         padding: 30px;
     }
+    .text-box{
+        margin-left: 30%;
+        margin-top: 30%;
+    }
+    .image{
+        position: absolute;
+        bottom: 20px;
+        right: 50px;
+    }
 }
+
 
 /*-----about-------*/
 
@@ -152,6 +172,7 @@ img{
 
 #about{
     padding: 60px 90px;
+    background-color: black;
 
 }
 .row{
@@ -169,10 +190,14 @@ img{
 .about-col-2{
     flex-basis: 65%;
 }
+.about-col-2 p{
+    color: #fff;
+    font-size: 18px;
+}
 .sub-title{
     font-size: 50px;
     font-weight: 600;
-    color:coral;
+    color: rgb(43, 146, 214);
 }
 
 /*-------contact--------*/
@@ -193,7 +218,7 @@ img{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: coral;
+    color: rgb(43, 146, 214);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -204,17 +229,20 @@ img{
     text-decoration: none;
     font-size: 25px;
     margin-right: 15px;
-    color: coral;
+    color: rgb(43, 146, 214);
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: crimson;
+    color: coral;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
     background: coral;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 5px;
 }
 .contact-right form{
     width: 100%;
@@ -229,26 +257,6 @@ form input, form textarea{
     color: white;
     font-size: 18px;
     border-radius: 5px;
-}
-
-/*----- footer -----*/
-.footer{
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-    color: rgb(173, 132, 78);
-}
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-}
-.icons .fa{
-    color: #f44336;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
 }
 
 /*CSS for about page*/

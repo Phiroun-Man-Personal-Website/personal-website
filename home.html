@@ -18,20 +18,20 @@
   </head>
   <body>
   <!--Creating head section inlc my name, home, about and portfolio-->
-  <section class="header">
-    
-    <nav>
-      <h1>Logo</h1>
-
-      <div class="nav-links" id="navLinks">
+  <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.jfif" class="logo" alt="logo">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
           <ul>
             <li><a href="home.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="portfolio.html">PORTFOLIO</a></li>
           </ul>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
       </div>
-      
-    </nav>
+    
       <div class="text-box">
           <h1>I'm Phiroun <span>Man</span></h1>
           <p>This is my official portfolio website to show all
@@ -42,20 +42,8 @@
       <div class="image">
         <img src="images/self-port.JPG" alt="">
       </div>
-  </section>
-
-  <!-- Javascript -->
-  <script>
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu(){
-        navLinks.style.right = "0"
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200"
-    }
-  </script>
-  
+    </div>
+ 
 <!--------about-------->
 
 <div id="about">
@@ -82,16 +70,31 @@
 
 
 <!---Contact Info -->
-  <section class="footer">
-      <h4>Contact</h4>
-      <p>12345 SW Main St, Beaverton OR 97000 <br> Phone Number: 555-555-2222</p>
-      <div class="icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-instagram"></i>  
+    <div id="contact">
+      <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h3 class="sub-title">Contact Me</h3>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>man.phiroun@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/phiroun"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a> 
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">SUBMIT</button>
+                </form> 
+            </div>
+          </div>
       </div>
-  </section>
+  </div>
 
   </body>
 </html>
