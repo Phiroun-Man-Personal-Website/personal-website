@@ -121,9 +121,18 @@ nav .fas{
     display: none;
 }
 
+/*-----------css for footer----------------*/
 
+.icons{
+    
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(43, 146, 214);
+    display: inline-block;
+    transition: transform 0.5s;
+}
 
-/*----------------css for small screen home page--------*/  
+/*----------------css for small screen home--------*/  
 @media only screen and (max-width: 700px){
     .text-box h1{
         font-size: 20px;
@@ -266,42 +275,3 @@ form input, form textarea{
     border-radius: 5px;
 }
 
-/*CSS for about page*/
-.sub-header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(17, 46, 165, 0.7),rgba(190, 191, 196, 0.7)),url(images/mthood.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-}
-.selfimage{
-    width: 10%;
-    height: 10%;
-    z-index: 5;
-    display: block;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-200%);
-}
-img{
-    max-width: 100%;
-    max-width: 100%;
-}
-
-
-
-
-
-/*CSS for portfolio page*/
-
-.port-header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(17, 46, 165, 0.7),rgba(190, 191, 196, 0.7)),url(images/columbiagorge.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}    

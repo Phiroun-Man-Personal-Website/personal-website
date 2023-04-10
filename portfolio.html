@@ -8,65 +8,62 @@
     
     <!--link css style and js-->
     <script src="javascript.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   </head>
   <body>
-  <!--Creating head section inlc my name, home, about and portfolio-->
-  <section class="port-header">
+    <!--Creating head section inlc my name, home, about and portfolio-->
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/logo.jfif" class="logo" alt="logo">
+              <div class="nav-tabs" id="navTabs">
+                <i class="fas fa-times" onclick="hidemenu"></i>
+                  <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                  </ul>
+              </div>
+            <i class="fas fa-bars" onclick="showmenu"></i>
+          </nav>
+        </div>
     
-    <nav>
-      <h1>Phiroun Man</h1>
+    <!--------about-------->
 
-      <div class="nav-links" id="navLinks">
-          <ul>
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-          </ul>
-      </div>
-      
-    </nav>
-      <div class="text-box">
-          <h1>Portland is my second home</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia cupiditate, suscipit corrupti dolore quo! Voluptates porro, <br> veritatis voluptatem dolor illo eum maxime totam sed quam. Neque illo provident vel.</p>
-
-      </div>
-  </section>
-  
-
-<!---Contact Info -->
-    <div id="contact">
-      <div class="container">
-          <div class="row">
-            <div class="contact-left">
-              <h3 class="sub-title">Contact Me</h3>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>man.phiroun@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>0123456789</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://github.com/phiroun"><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a> 
-                </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+                <img src="images/aboutme-pic.JPG" alt="">
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <br>
+                <br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odio accusantium quae incidunt,
+                    <br> voluptatibus necessitatibus fuga totam assumenda delectus unde cum minima iure modi rerum. 
+                    <br> Tenetur maxime ipsum tempore aperiam?</p>
+              </div>
             </div>
-            <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">SUBMIT</button>
-                </form> 
-            </div>
-          </div>
-      </div>
-  </div>
+        </div>
+    </div>
+
+    <!---------footer for social icons--------->
+
+    <div id="socialIcons">
+        <div class="icons">
+            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/phiroun"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/phiroun-man-7269481b0/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
 
   </body>
 </html>
-

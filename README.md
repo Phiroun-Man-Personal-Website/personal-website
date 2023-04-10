@@ -6,3 +6,4 @@ My Personal Website
 # Works that still in progrees
     -about page
     -portfolio page
+    -contact page
