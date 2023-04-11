@@ -123,14 +123,37 @@ nav .fas{
 
 /*-----------css for footer----------------*/
 
-.icons{
-    
+#contact{
+    padding: 60px 90px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: rgb(43, 146, 214);
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
     text-decoration: none;
     font-size: 25px;
+    margin-right: 15px;
     color: rgb(43, 146, 214);
     display: inline-block;
     transition: transform 0.5s;
 }
+.social-icons a:hover{
+    color: coral;
+    transform: translateY(-5px);
+}
+
 
 /*----------------css for small screen home--------*/  
 @media only screen and (max-width: 700px){
@@ -216,7 +239,7 @@ img{
     color: rgb(43, 146, 214);
 }
 
-/*-------contact--------*/
+/*-------contact page--------*/
 
 #contact{
     padding: 60px 90px;
