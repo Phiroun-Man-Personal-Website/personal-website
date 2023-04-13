@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Website</title>
+    
+    <!--link css style and js-->
+    <script src="javascript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  </head>
+  <body>
+  <!--Creating head section inlc my name, home, about and portfolio-->
+  <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.jfif" class="logo" alt="logo">
+            <div class="nav-tabs" id="navTabs">
+              <i class="fas fa-times" onclick="hidemenu"></i>
+                <ul>
+                  <li><a href="home.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="portfolio.html">PORTFOLIO</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+          <i class="fas fa-bars" onclick="showmenu"></i>
+        </nav>
+      </div>
+    </div>
+
+    <!--contact and submission form-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h3 class="sub-title">Contact</h3>
+                        <p>contact@gmail.com</p>
+                        <p>0123456789</p>
+                        <div class="social-icons">
+                           <a href=""><i class="fab fa-facebook-square"></i></a>
+                           <a href=""><i class="fab fa-github-square"></i></a>
+                           <a href=""><i class="fab fa-linkedin"></i></a>
+                           <a href=""><i class="fab fa-instagram-square"></i></a> 
+                        </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
