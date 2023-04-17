@@ -1,6 +1,5 @@
 //----- Home Page -----//
-
-//alert("Hello World! Welcome to my personal homepage")
+alert("Hello World! Welcome to my personal homepage")
 
 var navTabs = document.getElementsById("navTabs");
 function showmenu(){
@@ -10,12 +9,12 @@ function hidemenu() {
   navTabs.style.right = "-200px";
 }
 
-const form = document.querySelector("#form");
-const submitButton = document.querySelector("#submit");
-const scriptURL =
+//const form = document.querySelector("#form");
+//const submitButton = document.querySelector("#submit");
+//const scriptURL =
   "https://script.google.com/macros/s/1XTaVdkdAnzhAHoLOA-x0K4svtJOB9RUnp2OgudFCNoEE4Lo8muDKOgSO/exec";
 
-form.addEventListener("submit", (e) => {
+//form.addEventListener("submit", (e) => {
   submitButton.disabled = true;
   e.preventDefault();
   let requestBody = new FormData(form);
@@ -28,4 +27,4 @@ form.addEventListener("submit", (e) => {
       alert("Error!", error.message);
       submitButton.disabled = false;
     });
-});
+//});

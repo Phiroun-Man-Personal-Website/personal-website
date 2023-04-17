@@ -198,9 +198,10 @@ img{
 }
 
 #about{
-    padding: 60px 90px;
     background-color: black;
-
+}
+.container-01{
+    padding: 100px;
 }
 .row{
     display: flex;
@@ -211,7 +212,7 @@ img{
     flex-basis: 25%;
 }
 .about-col-1 img{
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
 }
 .about-col-2{
@@ -227,6 +228,31 @@ img{
     color: rgb(43, 146, 214);
 }
 
+/*--------portfolio page---------*/
+
+.container-1{
+    padding: 50px;
+    background-color: black;
+    justify-content: center;
+    display: block;
+    align-items: center;
+}
+.container-1 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.container-1 h3{
+    color: white;
+}
+.firstproject{
+    width: 80%;;
+}
+.secondproject{
+    width: 80%;
+}
+.thirdproject{
+    width: 80%;
+}
 /*-------contact page--------*/
 
 .contact-left{
